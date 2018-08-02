@@ -1,0 +1,46 @@
+<!DOCTYPE erb>
+<html>
+  <head>
+    <style>
+      .page-header {
+        background-image: url(<%= @link %>); 
+      }
+      .blended {
+        background-color: <%= @color %>;
+      }
+      .demo {
+        height: <%= @height %>px;
+        width : <%= @width %>px;
+      }
+    </style>
+    <link rel="stylesheet" href="deepfry2.css">
+    <title>title</title>
+  </head>
+  
+  <body>
+    <div class="page-header deepfry blended demo"></div>
+    <form method = "POST" action = "/imagefinal"> 
+      <p>Like your image? Take a screenshot! Otherwise, pick a color thet you'd like to be more prominent in this image :):</p>
+      <input type="radio"name="color" value="pink"> pink<br>
+      <input type="radio"name="color" value="red"> red<br>
+      <input type="radio"name="color" value="orange"> orange<br>
+      <input type="radio"name="color" value="yellow"> yellow<br>
+      <input type="radio"name="color" value="lime"> lime<br>
+      <input type="radio"name="color" value="green"> green<br>
+      <input type="radio"name="color" value="cyan"> cyan<br>
+      <input type="radio"name="color" value="blue"> blue<br>
+      <input type="radio"name="color" value="purple"> purple<br>
+      <input type="submit" value="Submit">
+        <br>
+        <p>If you have a hex code you'd like to use, enter it in the text box (Don't forget the #). The colors are inverted, so if you want to make your image have more of one color, choose the color across from it on the color wheel. Below is a good way to find the hex codes for certain colors</p>
+        <a href="https://www.rapidtables.com/web/color/RGB_Color.html">https://www.rapidtables.com/web/color/RGB_Color.html</a>
+        <br>
+        <br>
+      <input type="hidden"name="link" value=<%= @link %>>
+      <input type="text" name="color" >
+      <input type="hidden" name="height" value=<%= @height %>>
+      <input type="hidden" name="width" value=<%= @width %>>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
