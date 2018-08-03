@@ -7,6 +7,8 @@
       }
       .blended {
         background-color: <%= @color %>;
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
       }
       .demo {
         height: <%= @height %>px;
@@ -28,11 +30,6 @@
 
 .deepfry {
   filter: saturate(7) invert(100%);
-}
-
-.blended {
-  background-blend-mode: multiply;
-  background-repeat: no-repeat;
 }
 
 body {
