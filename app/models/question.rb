@@ -2,7 +2,7 @@
 # if @color.include? "#"
 #   @color = @color
   
-# elsif @color.downcase == "red"
+# elsif @color.downcase == "pink"
 #   @color = r:0 g:204 b:204
   
 # elsif @color.downcase == "red"
