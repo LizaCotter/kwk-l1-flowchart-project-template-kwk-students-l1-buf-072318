@@ -37,11 +37,6 @@ body {
   // overflow: hidden;
 }
 
-.page-header {
-  background-image: url("http://www.wfltrack.org/cross/images/2017-champ-girl3.jpg");
-  
-}
-
 .page-header:after {
   content: "";
   background-image: url("https://camo.githubusercontent.com/f85c66794181dc9da010c785a9c5bfbe97f83cbc/687474703a2f2f692e696d6775722e636f6d2f4f45425a7338422e706e67");
